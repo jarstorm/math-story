@@ -1,0 +1,90 @@
+@font-face { 
+	font-family: "Blackboard title"; 
+	src: url("../font/blackboard.ttf") 
+} 
+
+@font-face { 
+	font-family: "Blackboard"; 
+	src: url("../font/blackboard.otf") 
+} 
+
+@font-face { 
+	font-family: "Level"; 
+	src: url("../font/level.otf") 
+} 
+
+@font-face { 
+	font-family: "Title"; 
+	src: url("../font/title.ttf") 
+} 
+
+h1 { font-family: "Blackboard title", serif;
+	color: #E9E9E9;
+	font-size:200%;
+	text-shadow: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	} 
+
+h2 { font-family: "Blackboard title", serif;
+	color: #FBFBFB;
+	font-size:200%;
+	text-shadow: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	} 	
+	
+#time, #level, #scoreLabel { 
+	font-family: "Arial", bold, serif !important; 	
+	font-size:80% !important;	
+	color: rgba(255,255,255) !important;
+	margin-top: 8px;	
+	} 
+	
+
+.ok {
+	text-shadow: 0 0 10px #0f0,
+                   0 0 20px #0f0,
+                   0 0 30px #0f0,
+                   0 0 40px #00FFde,
+                   0 0 70px #00FFde,
+                   0 0 80px #00ffde,
+                   0 0 100px #00ffde,
+                   0 0 150px #00ffde !important;				   
+}	
+.bad {
+	text-shadow:   0 0 1px #f00,
+				   0 0 10px #f00,
+                   0 0 20px #f00,
+                   0 0 30px #f00,
+                   0 0 40px #ff0000,
+                   0 0 70px #ff0000,
+                   0 0 80px #ff0000,
+                   0 0 100px #ff0000,
+                   0 0 150px #ff0000 !important;	
+}
+
+.ui-page {
+text-align:center;
+background-image: url(images/wood.png);
+background-position: initial initial; 
+background-repeat: initial initial;
+}
+
+.ui-btn {
+	background-image: url(images/wood_texture.gif)
+}
+
+.response-button {
+background-image: url(images/button.png);
+}
+
+p {
+	text-shadow: none;
+	color: #FF0000;
+}
+
+label {
+	text-shadow: none;
+	color: #FFFFFF;
+}

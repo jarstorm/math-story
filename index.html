@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <title></title> 
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">	
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css" />       		
+	<link rel="stylesheet" href="css/app.css" />       		
+	<link rel="stylesheet" href="css/animations.css" />       		
+	
+</head>
+<body>
+
+	<div data-role="page">
+  		
+		<!-- Content -->	
+		<div data-role="content">
+			
+			<h1 class="titleAnimate" style="color:rgb(238,228,45) !important;font-family: 'Title', serif;font-size:400% !important;text-shadow: none;z-index:0;"> Math Story </h1>
+
+			<div class="panel-content">	
+				<a id="i18nIndexStory" href="story.html" data-role="button" rel="external" class="animate i18n"></a>			 
+				<!-- <a href="rank.html" data-role="button" rel="external" class="animate">Rank</a> -->			 
+				<a id="i18nIndexConfig" href="config.html" data-role="button" rel="external" class="animate i18n"></a>			 
+				<a id="i18nIndexAbout" href="about.html" data-role="button" rel="external" class="animate i18n"></a>			 
+			</div>
+						
+		</div>
+		<!-- END OF Content -->			
+		
+		<script src="js/energize-min.js"></script>		
+		<script src="jquery/jquery-1.10.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.3.2.min.js"></script>						
+		<script src="jquery/jquery.i18n.properties-min-1.0.9.js"></script>								
+		<script src="js/db.js"></script>							
+		<script src="js/index.js"></script>		
+		<script src="js/i18n.js"></script>				
+		
+<script>
+	// Animaciones de:  http://www.justinaguilar.com/animations/
+	$(window).scroll(function() {
+		$('.animate').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("bounce");				
+			}
+		});
+		$('.titleAnimate').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("fadeIn");				
+			}
+		});				
+				
+	});					
+
+
+</script>
+		
+	</div>		
+</body>
+</html>

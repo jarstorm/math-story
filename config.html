@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <title></title>    
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">	
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css" />       		
+	<link rel="stylesheet" href="css/app.css" />      
+</head>
+<body>
+
+	<div data-role="page">
+  		
+		<!-- Content -->	
+		<div data-role="content">	
+			<h1>Configuration</h1>
+			
+			<div data-role="fieldcontain">
+				<label id="i18nConfigLanguage" for="languageSelect" class="select i18n"></label>
+				<select name="languageSelect" id="languageSelect">
+					<option id="i18nConfigSpanish" value="es">Español</option>
+					<option id="i18nConfigEnglish" value="en">English</option>					
+				</select>
+			</div>
+			
+			<a id="i18nConfigOk" data-role="button" onclick="updateConfig();" class="animate i18n"></a>			  
+		</div>
+		<!-- END OF Content -->			
+ 
+  
+		<script src="jquery/jquery-1.10.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.3.2.min.js"></script>						
+		<script src="jquery/jquery.i18n.properties-min-1.0.9.js"></script>								
+		<script src="js/db.js"></script>						
+		<script src="js/i18n.js"></script>							
+		<script src="js/config.js"></script>							
+	</div>		
+</body>
+</html>

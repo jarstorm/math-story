@@ -1,0 +1,7 @@
+{        
+	"level3": [
+		{"title": "resultTitle", "operation": "+", "operands": "2", "min": "0", "max": "10", "okPoints": "10", "badPoints": "-5"}, 
+		{"title": "resultTitle", "operation": "-", "operands": "2", "min": "0", "max": "10", "okPoints": "10", "badPoints": "-5"},
+		{"title": "resultTitle", "operation": "x", "operands": "2", "min": "0", "max": "10", "okPoints": "10", "badPoints": "-5"}		
+	]	
+}
